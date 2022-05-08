@@ -1,4 +1,5 @@
-from collections.abc import Generator
+from url_parser.models.query_url import QueryUrl
+from url_parser.models.sku_url import SkuUrl
 
 
 class Marketplace:
@@ -9,9 +10,11 @@ class Marketplace:
     def __init__(self, logger) -> None:
         self._logger = logger
 
-    def parse(self, url: str) -> dict:
+    def parse(self, url: str) -> SkuUrl | QueryUrl | None:
         """
-        TODO
+        An URL can represent many things (sku, query, showcase),
+        the parse will identify the URL functionality and collect
+        details from it.
         """
 
-        return {}
+        return None

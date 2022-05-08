@@ -1,7 +1,10 @@
 import re
 
+from la_catch import catch
 from structlog.stdlib import BoundLogger, get_logger
 
+from url_parser.models.query_url import QueryUrl
+from url_parser.models.sku_url import SkuUrl
 from url_parser.options import get_marketplace_parser
 
 
@@ -13,19 +16,29 @@ class Parser:
     def __init__(self, logger: BoundLogger = get_logger()) -> None:
         self._logger = logger
 
-    def _log_error(self, url: str, marketplace: str, exception: Exception) -> None:
+    def _log_parse_error(
+        self, url: str, marketplace: str, exception: Exception
+    ) -> None:
         self._logger.exception(
-            event="URL parser error",
+            event="Parser error",
             url=url,
             marketplace=marketplace,
         )
 
-    def parse(self, url: str, marketplace: str) -> dict:
-        """TODO"""
+    @catch(call=_log_parse_error)
+    def parse(self, url: str, marketplace: str) -> SkuUrl | QueryUrl | None:
+        """Call the parse function from the respective marketplace."""
 
         parser = get_marketplace_parser(marketplace=marketplace, logger=self._logger)
         return parser.parse(url=url)
 
+    def _log_get_marketplace_error(self, url: str, exception: Exception) -> None:
+        self._logger.exception(
+            event="Get marketplace error",
+            url=url,
+        )
+
+    @catch(call=_log_get_marketplace_error)
     def get_marketplace(self, url: str) -> str | None:
         """
         Identifies the marketplace which the url belongs.
