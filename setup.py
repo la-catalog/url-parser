@@ -5,12 +5,12 @@ from setuptools import find_packages, setup
 long_description = Path("README.md").read_text()
 
 setup(
-    name="package-name",
+    name="url-parser",
     version="0.0.1",
-    description="Short description",
+    description="Collect url information",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/thiagola92/package-name",
+    url="https://github.com/thiagola92/url-parser",
     author="thiagola92",
     author_email="thiagola92@gmail.com",
     classifiers=[
@@ -21,6 +21,8 @@ setup(
     keywords="template, package, keywords",
     license="MIT",
     packages=find_packages(exclude=["tests"]),
-    install_requires=[],
+    install_requires=[
+        "structlog==21.5.0",
+    ],
     python_requires=">=3.10",
 )
