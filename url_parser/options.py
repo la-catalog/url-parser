@@ -3,11 +3,13 @@ from structlog.stdlib import BoundLogger
 from url_parser.abstractions import Marketplace
 from url_parser.exceptions import UnknowMarketplaceError
 from url_parser.marketplaces.amazon import Amazon
+from url_parser.marketplaces.amazon_pt import AmazonPT
 from url_parser.marketplaces.rihappy import Rihappy
 
 options: dict[Marketplace] = {
     "rihappy": Rihappy,
     "amazon": Amazon,
+    "amazon_pt": AmazonPT,
 }
 
 
