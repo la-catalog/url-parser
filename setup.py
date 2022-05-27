@@ -22,9 +22,9 @@ setup(
     license="MIT",
     packages=find_packages(exclude=["tests"]),
     install_requires=[
-        "structlog==21.5.0",
-        "la-catch==0.0.3",
-        "pydantic==1.9.0",
+        "structlog>=21.5.0",
+        "la-catch>=0.0.3",
+        "pydantic>=1.9.0",
     ],
     python_requires=">=3.10",
 )
