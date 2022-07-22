@@ -7,4 +7,4 @@ Pacote para quebrar informações de um URL. Por exemplo:
     - Vitrine
 
 # install
-`pip install git+https://github.com/la-catalog/url-parser.git`
+`pdm add git+https://github.com/la-catalog/url-parser.git`

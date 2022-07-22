@@ -19,5 +19,5 @@ def get_marketplace_parser(marketplace: str, logger: BoundLogger) -> Marketplace
         return options[marketplace](log)
     except KeyError as e:
         raise UnknowMarketplaceError(
-            f"Marketplace '{marketplace}' is not defined in page_parser package"
+            f"Marketplace '{marketplace}' is not defined in url_parser package"
         ) from e

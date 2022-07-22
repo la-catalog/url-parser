@@ -1,4 +1,0 @@
-la-catch==0.0.3
-pydantic==1.9.0
-structlog==21.5.0
-typing_extensions==4.2.0
