@@ -1,7 +1,7 @@
 [project]
 name = "url-parser"
 version = "0.1.0"
-description = "Short description"
+description = "Collect url information"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
@@ -15,7 +15,11 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Operating System :: OS Independent",
 ]
-dependencies = []
+dependencies = [
+    "la-catch>=0.0.5",
+    "structlog>=22.1.0",
+    "pydantic>=1.9.1",
+]
 
 [project.urls]
 repository = "https://github.com/la-catalog/url-parser"
