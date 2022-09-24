@@ -7,14 +7,15 @@ authors = [
     {name = "thiagola92", email = "thiagola92@gmail.com"},
 ]
 dependencies = [
-    "la-catch>=0.0.5",
-    "structlog>=22.1.0",
-    "pydantic>=1.9.1",
+    "la-catch==0.0.6",
+    "structlog==22.1.0",
+    "pydantic==1.10.2",
 ]
 
 [project.urls]
 repository = "https://github.com/la-catalog/url-parser"
 
+[project.optional-dependencies]
 [tool.pdm]
 
 [tool.pdm.scripts]
@@ -24,8 +25,8 @@ isort = "python -m isort -v --ac ."
 
 [tool.pdm.dev-dependencies]
 lint = [
-    "black",
-    "isort"
+    "black==22.8.0",
+    "isort==5.10.1",
 ]
 
 [build-system]
