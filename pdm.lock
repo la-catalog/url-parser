@@ -84,7 +84,7 @@ summary = "Backported and Experimental Type Hints for Python 3.7+"
 
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:5a50c90d51b8e2ef5b60ca09f4fcd2689204ef5d1574fd6382a8efd4b604fdf5"
+content_hash = "sha256:8baf38589532f4add28a1c8b715cd35b7e7fdd4832d23ed18487aa8991f53f03"
 
 [metadata.files]
 "black 22.10.0" = [
