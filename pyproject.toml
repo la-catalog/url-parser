@@ -8,7 +8,7 @@ authors = [
 ]
 dependencies = [
     "la-catch==0.0.6",
-    "structlog==22.1.0",
+    "structlog==22.2.0",
     "pydantic==1.10.2",
 ]
 

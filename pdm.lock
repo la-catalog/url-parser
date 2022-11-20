@@ -66,7 +66,7 @@ dependencies = [
 
 [[package]]
 name = "structlog"
-version = "22.1.0"
+version = "22.2.0"
 requires_python = ">=3.7"
 summary = "Structured Logging for Python"
 
@@ -84,7 +84,7 @@ summary = "Backported and Experimental Type Hints for Python 3.7+"
 
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:c3b0044f70e45572f8026010d65237c698420c87f5bce307d316f5705ef00a41"
+content_hash = "sha256:33ee9e1f8c74cc4ebe243971fa5be5e71216f4d866dc8d4fe3abf27321001b81"
 
 [metadata.files]
 "black 22.10.0" = [
@@ -176,9 +176,9 @@ content_hash = "sha256:c3b0044f70e45572f8026010d65237c698420c87f5bce307d316f5705
     {url = "https://files.pythonhosted.org/packages/fe/5b/6f77e6ebc93e5e3c7fd480e1b171a6547407eba901a56a65d2745df24144/pydantic-1.10.2-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:bedf309630209e78582ffacda64a21f96f3ed2e51fbf3962d4d488e503420254"},
     {url = "https://files.pythonhosted.org/packages/fe/fd/8f7f8271d526378c927babd1229501e576760cef9a509909a3415eec3c0d/pydantic-1.10.2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:bb6ad4489af1bac6955d38ebcb95079a836af31e4c4f74aba1ca05bb9f6027bd"},
 ]
-"structlog 22.1.0" = [
-    {url = "https://files.pythonhosted.org/packages/2b/d4/359d0313ba3e7080cc943b515640b9e301f51abf196008c83c765d939df5/structlog-22.1.0.tar.gz", hash = "sha256:94b29b1d62b2659db154f67a9379ec1770183933d6115d21f21aa25cfc9a7393"},
-    {url = "https://files.pythonhosted.org/packages/fb/22/9748093e3a26729cc9d4f1dc4ffafaf43917377884b8eb7fce57ae9d06e9/structlog-22.1.0-py3-none-any.whl", hash = "sha256:760d37b8839bd4fe1747bed7b80f7f4de160078405f4b6a1db9270ccbfce6c30"},
+"structlog 22.2.0" = [
+    {url = "https://files.pythonhosted.org/packages/18/c3/ab9d0d5d2d792a4a954b2449cdb88b7a5dadc063985ad5e720b0348db612/structlog-22.2.0-py3-none-any.whl", hash = "sha256:bb1aa189214c30372a8afaa592f9556756aeb690e1ad7eb34391d7b5fa0f09b2"},
+    {url = "https://files.pythonhosted.org/packages/4d/7b/54c4fb8063d8f1e81b17c792fefd244a205210fc5742a08daa905482227b/structlog-22.2.0.tar.gz", hash = "sha256:4edfe1d9f15f8a4bf365a817f7182af5d610596c155434b7564bfe7d40c2753c"},
 ]
 "tomli 2.0.1" = [
     {url = "https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
